@@ -1,10 +1,9 @@
-version: "3.8"
+version: "3.9"
 
 services:
   fastapi:
     image: fastapi
     build:
-      context: ./
-      dockerfile: Dockerfile
+      context: .
     ports:
       - "127.0.0.1:5000:5000"
